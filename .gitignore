@@ -1,0 +1,6 @@
+node_modules
+
+local-packages/local-lion-ui/components
+local-packages/local-lion-ui/docs
+local-packages/local-lion-ui/exports
+local-packages/local-lion-ui/scripts
