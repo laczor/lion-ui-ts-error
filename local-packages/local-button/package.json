@@ -1,0 +1,24 @@
+{
+  "name": "local-button",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc --declaration index.ts"
+  },
+  "type": "module",
+  "module": "index.ts",
+  "types": "index.d.ts",
+  "files": [
+    "*.d.ts",
+    "*.js",
+    "*.ts"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@types/node": "^18.13.0"
+  }
+}

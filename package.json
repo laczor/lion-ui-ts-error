@@ -13,8 +13,9 @@
   "dependencies": {
     "@lion/button": "^0.18.1",
     "@lion/ui": "^0.1.3",
+    "html-webpack-plugin": "^5.5.0",
     "local-lion-ui": "file:local-packages/local-lion-ui",
-    "html-webpack-plugin": "^5.5.0"
+    "local-button": "file:local-packages/local-button"
   },
   "devDependencies": {
     "babel-loader": "^9.1.2",
