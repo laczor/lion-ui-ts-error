@@ -3,9 +3,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "tsc --declaration index.ts"
+    "build": "tsc --build"
   },
-  "type": "module",
   "module": "index.ts",
   "types": "index.d.ts",
   "files": [
@@ -13,6 +12,7 @@
     "*.js",
     "*.ts"
   ],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "devDependencies": {

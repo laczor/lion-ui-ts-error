@@ -1,9 +1,13 @@
-const { resolve } = require('path');
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = {
+import path from 'path';
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
+
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+
+export default {
     mode: 'development',
     entry: './src/index.ts',
     output: {
@@ -34,14 +38,10 @@ module.exports = {
             title: 'Scss application',
             template: 'src/index.html'
           }),
-          new CssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output both options are optional
-            filename: '[name].css',
-          }),
     ]
 };
 
 function projectPaths(rootPaths) {
-	const toAbsolute = rootRelative => resolve(__dirname, '../', rootRelative);
+	const toAbsolute = rootRelative => path.resolve(__dirname, '../', rootRelative);
 	return rootPaths.map(toAbsolute);
 }

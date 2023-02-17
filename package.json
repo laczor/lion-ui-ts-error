@@ -15,6 +15,7 @@
     "@lion/ui": "^0.1.3",
     "html-webpack-plugin": "^5.5.0",
     "local-lion-ui": "file:local-packages/local-lion-ui",
+    "local-ui-with-index": "file:local-packages/local-ui-with-index",
     "local-button": "file:local-packages/local-button"
   },
   "devDependencies": {
